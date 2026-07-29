@@ -5,9 +5,9 @@ StudentHub is a collection of web development practicals created as part of my c
 ## Repository Structure
 
 StudentHub
-│
-├── Practical 1
-├── Practical 2
+
+Practical 1
+Practical 2
 
 ## Technologies Used
 
