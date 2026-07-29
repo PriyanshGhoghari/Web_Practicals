@@ -1,0 +1,16 @@
+
+Sitemap for StudentHub
+
+StudentHub
+│
+├── Home (Index.html)
+│   ├── About (About.html)
+│   ├── Register (Register.html)
+│   ├── Login (Login.html)
+│   ├── Student Dashboard (StudentDashboard.html)
+│   │   ├── Profile (Profile.html)
+│   │   └── Events (Events.html)
+│   └── FAQ (FAQ.html)
+│
+└── Admin
+    └── Admin Dashboard (Admin/AdminDashboard.html)
