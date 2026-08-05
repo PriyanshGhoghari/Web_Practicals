@@ -1,57 +1,52 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>StudentHub Portal — Register</title>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StudentHub Portal — Register</title>
+  </head>
 
-<body>
-
-  <div>
+  <body>
     <div>
-      <h1>StudentHub Portal</h1>
+      <div>
+        <h1>StudentHub Portal</h1>
 
-      <div id="registerError"></div>
+        <div id="registerError"></div>
 
-      <form id="registerForm">
+        <form id="registerForm">
+          <div>
+            <label for="regName">Full name</label>
+            <input type="text" id="regName" required />
+          </div>
 
-        <div>
-          <label for="regName">Full name</label>
-          <input type="text" id="regName" required>
-        </div>
+          <div>
+            <label for="regEmail">Email</label>
+            <input type="email" id="regEmail" required />
+          </div>
 
-        <div>
-          <label for="regEmail">Email</label>
-          <input type="email" id="regEmail" required>
-        </div>
+          <div>
+            <label for="regPhone">Phone no</label>
+            <input type="tel" id="regPhone" required />
+          </div>
 
-        <div>
-          <label for="regPhone">Phone no</label>
-          <input type="tel" id="regPhone" required>
-        </div>
+          <div>
+            <label for="regPassword">Password</label>
+            <input type="password" id="regPassword" required />
+          </div>
 
-        <div>
-          <label for="regPassword">Password</label>
-          <input type="password" id="regPassword" required>
-        </div>
+          <div>
+            <label for="regConfirm">Confirm password</label>
+            <input type="password" id="regConfirm" required />
+          </div>
 
-        <div>
-          <label for="regConfirm">Confirm password</label>
-          <input type="password" id="regConfirm" required>
-        </div>
+          <button type="submit">Sign up</button>
+        </form>
 
-        <button type="submit">Sign up</button>
-
-      </form>
-
-      <p>
-        Already have an account?
-        <a href="login.html">Login</a>
-      </p>
-
+        <p>
+          Already have an account?
+          <a href="login.html">Login</a>
+        </p>
+      </div>
     </div>
-  </div>
-
-</body>
+  </body>
 </html>
