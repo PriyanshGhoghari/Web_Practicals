@@ -6,8 +6,8 @@ StudentHub is a collection of web development practicals created as part of my c
 
 StudentHub
 
-Practical 1
-Practical 2
+- Practical 1
+- Practical 2
 
 ## Technologies Used
 
@@ -17,15 +17,14 @@ Practical 2
 ## Practicals
 
 ### Practical 1
-- Basic HTML concepts
 - Images and webpage structure
 
 ### Practical 2
 - StudentHub website
 - Multiple HTML pages
 - Navigation
-- CSS styling
-- Semantic HTML
+- Basic HTML concepts
+
 
 ## Author
 

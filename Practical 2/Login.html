@@ -1,48 +1,46 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>StudentHub | Login</title>
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StudentHub Portal — Login</title>
+</head>
 
-  <body>
-    <header>
+<body>
+
+  <div>
+    <div>
       <h1>StudentHub Portal</h1>
 
-      <nav aria-label="Main Navigation">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="register.html">Register</a></li>
-          <li><a href="login.html">Login</a></li>
-          <li><a href="StudentDashboard.html">Dashboard</a></li>
-          <li><a href="events.html">Events</a></li>
-          <li><a href="profile.html">Profile</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="faq.html">FAQ</a></li>
-        </ul>
-      </nav>
-    </header>
+      <div id="loginSuccess"></div>
+      <div id="loginError"></div>
 
-    <main>
-      <section>
-        <h2>Login</h2>
+      <form id="loginForm">
+        <div>
+          <label for="loginEmail">Email</label>
+          <input type="email" id="loginEmail" required>
+        </div>
 
-        <form>
-          <label for="email">Email</label><br />
-          <input type="email" id="email" /><br /><br />
+        <div>
+          <label for="loginPassword">Password</label>
+          <input type="password" id="loginPassword" required>
+        </div>
 
-          <label for="password">Password</label><br />
-          <input type="password" id="password" /><br /><br />
+        <a href="#">Forgot password?</a>
 
-          <button type="submit">Login</button>
-        </form>
-      </section>
-    </main>
+        <button type="submit">Login</button>
+      </form>
 
-    <footer>
-      <p>&copy; 2026 StudentHub Portal</p>
-    </footer>
-  </body>
+      <p>
+        Don't have an account?
+        <a href="register.html">Register</a>
+      </p>
+
+      <p>
+        Teacher demo login: teacher@college.edu / teacher123
+      </p>
+    </div>
+  </div>
+
+</body>
 </html>

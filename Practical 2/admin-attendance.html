@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StudentHub Portal — Take Attendance</title>
+  </head>
+
+  <body>
+    <nav>
+      <div>
+        StudentHub Portal
+      </div>
+
+      <div>
+        <a href="admin-dashboard.html">Admin Dashboard</a>
+        <a href="#">Logout</a>
+      </div>
+    </nav>
+
+    <div>
+      <form id="adminAttendanceForm">
+        <div>
+          <div>
+            <label for="adminClassSelect">Class</label>
+            <select id="adminClassSelect"></select>
+          </div>
+
+          <div>
+            <label for="adminDateInput">Date</label>
+            <input type="date" id="adminDateInput" />
+          </div>
+        </div>
+
+        <div>
+          <h2>Student list for this class</h2>
+
+          <table>
+            <thead>
+              <tr>
+                <th>Roll No.</th>
+                <th>Name</th>
+                <th>Present</th>
+              </tr>
+            </thead>
+
+            <tbody id="adminAttendanceBody"></tbody>
+          </table>
+        </div>
+
+        <div id="attendanceSaved">Attendance saved.</div>
+
+        <button type="submit">
+          Submit / update attendance
+        </button>
+      </form>
+    </div>
+
+    <footer>
+      &copy; 2026 College Name. All rights reserved.
+    </footer>
+  </body>
+</html>

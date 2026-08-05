@@ -1,42 +1,115 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Profile</title>
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StudentHub Portal — Profile</title>
+</head>
 
-  <body>
-    <header>
-      <h1>StudentHub Portal</h1>
+<body>
 
-      <nav aria-label="Main Navigation">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="register.html">Register</a></li>
-          <li><a href="login.html">Login</a></li>
-          <li><a href="StudentDashboard.html">Dashboard</a></li>
-          <li><a href="events.html">Events</a></li>
-          <li><a href="profile.html">Profile</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="faq.html">FAQ</a></li>
-        </ul>
-      </nav>
-    </header>
+  <nav>
+    <div>
+      <span>&#9679;</span> StudentHub Portal
+    </div>
 
-    <main>
-      <section>
-        <h2>Student Profile</h2>
-        <p>Name: John Doe</p>
-        <p>Email: student@example.com</p>
-        <p>Department: Computer Engineering</p>
-        <p>Semester: 5</p>
-      </section>
-    </main>
+    <div>
+      <a href="index.html">Home</a>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="events.html">Events</a>
+      <a href="profile.html">Profile</a>
+      <a href="#">Logout</a>
+    </div>
+  </nav>
 
-    <footer>
-      <p>&copy; 2026 StudentHub Portal</p>
-    </footer>
-  </body>
+  <div>
+    <div>
+      <div>
+        Profile<br>photo
+      </div>
+
+      <div>
+        <h2 id="profileName">Student</h2>
+        <div>Update your details below and save changes.</div>
+      </div>
+    </div>
+
+    <div id="profileSaved">Profile updated.</div>
+
+    <form id="profileForm">
+
+      <div>
+
+        <div>
+          <label for="studentId">Student ID</label>
+          <input type="text" id="studentId">
+        </div>
+
+        <div>
+          <label for="fullName">Full name</label>
+          <input type="text" id="fullName">
+        </div>
+
+        <div>
+          <label for="dob">Date of birth</label>
+          <input type="text" id="dob" placeholder="DD/MM/YYYY">
+        </div>
+
+        <div>
+          <label for="bloodGroup">Blood group</label>
+          <input type="text" id="bloodGroup">
+        </div>
+
+        <div>
+          <label for="gender">Gender</label>
+          <input type="text" id="gender">
+        </div>
+
+        <div>
+          <label for="phone">Phone no</label>
+          <input type="tel" id="phone">
+        </div>
+
+        <div>
+          <label for="email">Email</label>
+          <input type="email" id="email">
+        </div>
+
+        <div>
+          <label for="address">Address</label>
+          <input type="text" id="address">
+        </div>
+
+        <div>
+          <label for="pincode">Pincode</label>
+          <input type="text" id="pincode">
+        </div>
+
+        <div>
+          <label for="aadhaar">Aadhaar</label>
+          <input type="text" id="aadhaar">
+        </div>
+
+        <div>
+          <label for="guardianName">Guardian name</label>
+          <input type="text" id="guardianName">
+        </div>
+
+        <div>
+          <label for="guardianPhone">Guardian phone</label>
+          <input type="tel" id="guardianPhone">
+        </div>
+
+      </div>
+
+      <button type="submit">Save changes</button>
+
+    </form>
+  </div>
+
+  <footer>
+    &copy; 2026 College Name. All rights reserved.
+  </footer>
+
+</body>
 </html>
