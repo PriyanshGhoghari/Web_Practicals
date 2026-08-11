@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>StudentHub Portal — Attendance</title>
+
+    <link rel="stylesheet" href="CSS/attendance.css" />
+  </head>
+
+  <body>
+    <nav>
+      <a href="index.html" class="logo">
+        <img src="Images/student_icon.png" alt="StudentHub" />
+        <span>StudentHub</span>
+      </a>
+
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="events.html">Events</a>
+        <a href="profile.html">Profile</a>
+        <a href="#">Logout</a>
+      </div>
+    </nav>
+
+    <main class="attendance-page">
+      <section class="attendance-box">
+        <div class="overall-attendance">
+          <div>
+            <span class="overall-label"> Overall Attendance </span>
+
+            <span id="overallAttendance"> 82% </span>
+          </div>
+        </div>
+
+        <div class="subject-section">
+          <h1>Subject-wise Attendance</h1>
+
+          <div class="table-container">
+            <table class="attendance-table">
+              <thead>
+                <tr>
+                  <th>Subject Code</th>
+                  <th>Subject</th>
+                  <th>Attendance</th>
+                </tr>
+              </thead>
+
+              <tbody id="attendanceTableBody">
+                <tr>
+                  <td>CS301</td>
+                  <td>Data Structures</td>
+                  <td>38 / 45</td>
+                </tr>
+
+                <tr>
+                  <td>CS302</td>
+                  <td>Web Development</td>
+                  <td>34 / 42</td>
+                </tr>
+
+                <tr>
+                  <td>CS303</td>
+                  <td>DBMS</td>
+                  <td>40 / 48</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 StudentHub Portal. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

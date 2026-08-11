@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>StudentHub Portal — Admin Dashboard</title>
+
+    <link rel="stylesheet" href="CSS/admin-dashboard.css" />
+  </head>
+
+  <body>
+    <nav>
+      <div class="logo">
+        <img src="Images/student_icon.png" alt="StudentHub" />
+        <span>StudentHub</span>
+        <small>Admin / Teacher</small>
+      </div>
+
+      <div class="nav-links">
+        <a href="admin-dashboard.html" class="active"> Admin Dashboard </a>
+
+        <a href="#" class="logout"> Logout </a>
+      </div>
+    </nav>
+
+    <main class="admin-dashboard">
+      <div class="welcome">
+        <h1 id="adminWelcome">Welcome, Teacher</h1>
+      </div>
+
+      <div class="admin-cards">
+        <a href="admin-timetable.html" class="admin-card">
+          <div class="bubble bubble-one"></div>
+          <div class="bubble bubble-two"></div>
+
+          <div class="card-content">
+            <h2>My Timetable</h2>
+
+            <p>View your class schedule.</p>
+
+            <span> View Timetable → </span>
+          </div>
+        </a>
+
+        <a href="admin-attendance.html" class="admin-card">
+          <div class="bubble bubble-one"></div>
+          <div class="bubble bubble-two"></div>
+
+          <div class="card-content">
+            <h2>Attendance</h2>
+
+            <p>Mark and edit attendance for your classes.</p>
+
+            <span> Manage Attendance → </span>
+          </div>
+        </a>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 StudentHub Portal. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

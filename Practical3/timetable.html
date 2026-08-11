@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>StudentHub Portal — Timetable</title>
+
+    <link rel="stylesheet" href="CSS/timetable.css" />
+  </head>
+
+  <body>
+    <nav>
+      <a href="index.html" class="logo">
+        <img src="Images/student_icon.png" alt="StudentHub" />
+        <span>StudentHub</span>
+      </a>
+
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="events.html">Events</a>
+        <a href="profile.html">Profile</a>
+        <a href="#">Logout</a>
+      </div>
+    </nav>
+
+    <main class="timetable-page">
+      <section class="timetable-box">
+        <div class="day-selector">
+          <label for="daySelect">Select day</label>
+
+          <select id="daySelect">
+            <option selected>Monday</option>
+            <option>Tuesday</option>
+            <option>Wednesday</option>
+            <option>Thursday</option>
+            <option>Friday</option>
+            <option>Saturday</option>
+          </select>
+        </div>
+
+        <div class="table-container">
+          <table class="timetable-table">
+            <thead>
+              <tr>
+                <th>Time</th>
+                <th>Faculty</th>
+                <th>Course</th>
+                <th>Room</th>
+              </tr>
+            </thead>
+
+            <tbody id="timetableBody">
+              <tr>
+                <td>9:00 - 10:00</td>
+                <td>Dr. Sharma</td>
+                <td>Data Structures</td>
+                <td>Room 101</td>
+              </tr>
+
+              <tr>
+                <td>10:00 - 11:00</td>
+                <td>Prof. Patel</td>
+                <td>Web Development</td>
+                <td>Room 204</td>
+              </tr>
+
+              <tr>
+                <td>11:00 - 12:00</td>
+                <td>Dr. Mehta</td>
+                <td>DBMS</td>
+                <td>Room 102</td>
+              </tr>
+
+              <tr>
+                <td>12:00 - 1:00</td>
+                <td>—</td>
+                <td>Lunch Break</td>
+                <td>—</td>
+              </tr>
+
+              <tr>
+                <td>1:00 - 2:00</td>
+                <td>Prof. Shah</td>
+                <td>Mathematics</td>
+                <td>Room 105</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 StudentHub Portal. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

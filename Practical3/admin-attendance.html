@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>StudentHub Portal — Take Attendance</title>
+
+    <link rel="stylesheet" href="CSS/admin-attendance.css" />
+  </head>
+
+  <body>
+    <nav>
+      <div class="logo">
+        <img src="Images/student_icon.png" alt="StudentHub" />
+        <span>StudentHub</span>
+        <small>Admin / Teacher</small>
+      </div>
+
+      <div class="nav-links">
+        <a href="admin-dashboard.html">Admin Dashboard</a>
+        <a href="#" class="logout">Logout</a>
+      </div>
+    </nav>
+
+    <main class="attendance-page">
+      <section class="attendance-box">
+        <form id="adminAttendanceForm">
+          <div class="attendance-selection">
+            <div class="selection-group">
+              <label for="adminClassSelect"> Class </label>
+
+              <select id="adminClassSelect">
+                <option selected>Discrete Mathematics</option>
+
+                <option>Web Development</option>
+
+                <option>Object Oriented Programming</option>
+              </select>
+            </div>
+
+            <div class="selection-group">
+              <label for="adminDateInput"> Date </label>
+
+              <input type="date" id="adminDateInput" />
+            </div>
+          </div>
+
+          <div class="student-section">
+
+            <div class="student-list">
+              <table class="attendance-table">
+                <thead>
+                  <tr>
+                    <th>Roll No.</th>
+                    <th>Name</th>
+                    <th>Present</th>
+                  </tr>
+                </thead>
+
+                <tbody id="adminAttendanceBody">
+                  <tr>
+                    <td>25DCE001</td>
+                    <td>Aarav Shah</td>
+                    <td>
+                      <input type="checkbox" name="attendance" />
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>25DCE002</td>
+                    <td>Priya Mehta</td>
+                    <td>
+                      <input type="checkbox" name="attendance" />
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>25DCE003</td>
+                    <td>Rohan Patel</td>
+                    <td>
+                      <input type="checkbox" name="attendance" />
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>25DCE004</td>
+                    <td>Sneha Joshi</td>
+                    <td>
+                      <input type="checkbox" name="attendance" />
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>25DCE005</td>
+                    <td>Aditya Shah</td>
+                    <td>
+                      <input type="checkbox" name="attendance" />
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>25DCE006</td>
+                    <td>Rahul Patel</td>
+                    <td>
+                      <input type="checkbox" name="attendance" />
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>25DCE007</td>
+                    <td>Neha Desai</td>
+                    <td>
+                      <input type="checkbox" name="attendance" />
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>25DCE008</td>
+                    <td>Yash Mehta</td>
+                    <td>
+                      <input type="checkbox" name="attendance" />
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>25DCE009</td>
+                    <td>Dhruv Shah</td>
+                    <td>
+                      <input type="checkbox" name="attendance" />
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>25DCE010</td>
+                    <td>Riya Patel</td>
+                    <td>
+                      <input type="checkbox" name="attendance" />
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>25DCE011</td>
+                    <td>Krish Joshi</td>
+                    <td>
+                      <input type="checkbox" name="attendance" />
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>25DCE012</td>
+                    <td>Meera Shah</td>
+                    <td>
+                      <input type="checkbox" name="attendance" />
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>25DCE013</td>
+                    <td>Dev Patel</td>
+                    <td>
+                      <input type="checkbox" name="attendance" />
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>25DCE014</td>
+                    <td>Jiya Mehta</td>
+                    <td>
+                      <input type="checkbox" name="attendance" />
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>25DCE015</td>
+                    <td>Harsh Shah</td>
+                    <td>
+                      <input type="checkbox" name="attendance" />
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>25DCE016</td>
+                    <td>Diya Patel</td>
+                    <td>
+                      <input type="checkbox" name="attendance" />
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>25DCE017</td>
+                    <td>Manav Joshi</td>
+                    <td>
+                      <input type="checkbox" name="attendance" />
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>25DCE018</td>
+                    <td>Ananya Shah</td>
+                    <td>
+                      <input type="checkbox" name="attendance" />
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>25DCE019</td>
+                    <td>Vivaan Patel</td>
+                    <td>
+                      <input type="checkbox" name="attendance" />
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>25DCE020</td>
+                    <td>Ishita Mehta</td>
+                    <td>
+                      <input type="checkbox" name="attendance" />
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>25DCE021</td>
+                    <td>Arjun Shah</td>
+                    <td>
+                      <input type="checkbox" name="attendance" />
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>25DCE022</td>
+                    <td>Kavya Patel</td>
+                    <td>
+                      <input type="checkbox" name="attendance" />
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>25DCE023</td>
+                    <td>Om Joshi</td>
+                    <td>
+                      <input type="checkbox" name="attendance" />
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>25DCE024</td>
+                    <td>Tanvi Shah</td>
+                    <td>
+                      <input type="checkbox" name="attendance" />
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>25DCE025</td>
+                    <td>Ayush Patel</td>
+                    <td>
+                      <input type="checkbox" name="attendance" />
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>25DCE026</td>
+                    <td>Khushi Mehta</td>
+                    <td>
+                      <input type="checkbox" name="attendance" />
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>25DCE027</td>
+                    <td>Devansh Shah</td>
+                    <td>
+                      <input type="checkbox" name="attendance" />
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>25DCE028</td>
+                    <td>Riya Joshi</td>
+                    <td>
+                      <input type="checkbox" name="attendance" />
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>25DCE029</td>
+                    <td>Priyansh Ghoghari</td>
+                    <td>
+                      <input type="checkbox" name="attendance" />
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="attendance-action">
+              <button type="submit">Update Attendance</button>
+            </div>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 StudentHub Portal. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

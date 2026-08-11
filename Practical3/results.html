@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>StudentHub Portal — Results</title>
+
+    <link rel="stylesheet" href="CSS/results.css">
+</head>
+
+<body>
+
+    <nav>
+
+        <a href="index.html" class="logo">
+            <img src="Images/student_icon.png" alt="StudentHub">
+            <span>StudentHub</span>
+        </a>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="events.html">Events</a>
+            <a href="profile.html">Profile</a>
+            <a href="#">Logout</a>
+        </div>
+
+    </nav>
+
+
+    <main class="results-page">
+
+        <section class="exam-selector">
+
+            <div class="selector-group">
+
+                <label for="examSelect">Select exam</label>
+
+                <select id="examSelect">
+                    <option value="" selected disabled hidden>
+                        Select Semester
+                    </option>
+
+                    <option>Semester 1</option>
+                    <option>Semester 2</option>
+                    <option>Semester 3</option>
+                    <option>Semester 4</option>
+                </select>
+
+            </div>
+
+            <button id="viewResultBtn">
+                View Result
+            </button>
+
+        </section>
+
+
+        <section class="result-card" id="resultModal">
+
+            <div class="result-header">
+                <h1>University Result</h1>
+            </div>
+
+
+            <div class="student-details">
+
+                <div class="detail">
+                    <span>Student Name</span>
+                    <strong id="resultStudentName">
+                        GUEST STUDENT
+                    </strong>
+                </div>
+
+                <div class="detail">
+                    <span>Student ID</span>
+                    <strong id="resultStudentId">
+                        25DCE029
+                    </strong>
+                </div>
+
+                <div class="detail">
+                    <span>Semester</span>
+                    <strong id="resultSemester">
+                        4
+                    </strong>
+                </div>
+
+                <div class="detail">
+                    <span>Month / Year</span>
+                    <strong id="resultMonth">
+                        May 2026
+                    </strong>
+                </div>
+
+                <div class="detail">
+                    <span>SGPA</span>
+                    <strong id="resultSgpa">
+                        8.18
+                    </strong>
+                </div>
+
+            </div>
+
+
+            <div class="table-container">
+
+                <table class="result-table">
+
+                    <thead>
+                        <tr>
+                            <th>Course Name</th>
+                            <th>Course Type</th>
+                            <th>Credit</th>
+                            <th>Grade</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="resultRows">
+
+                        <tr>
+                            <td>Programming with C++</td>
+                            <td>Theory</td>
+                            <td>5.00</td>
+                            <td>A</td>
+                        </tr>
+
+                        <tr>
+                            <td>Digital Electronics</td>
+                            <td>Theory</td>
+                            <td>3.00</td>
+                            <td>A</td>
+                        </tr>
+
+                        <tr>
+                            <td>Elements of Engineering</td>
+                            <td>Theory</td>
+                            <td>4.00</td>
+                            <td>A+</td>
+                        </tr>
+
+                        <tr>
+                            <td>Engineering Mathematics-II</td>
+                            <td>Theory</td>
+                            <td>4.00</td>
+                            <td>B+</td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>&copy; 2026 StudentHub Portal. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>

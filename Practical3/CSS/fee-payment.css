@@ -1,0 +1,240 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    font-family: Arial, sans-serif;
+
+    color: #1e293b;
+    background: white;
+}
+
+
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 18px;
+
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    color: #2563eb;
+
+    font-size: 22px;
+    font-weight: bold;
+
+    text-decoration: none;
+}
+
+.logo img {
+    width: 32px;
+    height: 32px;
+
+    object-fit: contain;
+}
+
+.nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    gap: 8px;
+}
+
+.nav-links a {
+    position: relative;
+
+    padding: 8px 10px;
+
+    color: #475569;
+
+    font-size: 14px;
+
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    color: #2563eb;
+}
+
+.nav-links a::after {
+    content: "";
+
+    position: absolute;
+
+    left: 50%;
+    bottom: 2px;
+
+    width: 0;
+    height: 2px;
+
+    background: #2563eb;
+
+    transform: translateX(-50%);
+
+    transition: width 0.25s ease;
+}
+
+.nav-links a:hover::after {
+    width: 70%;
+}
+
+
+
+.fees-page {
+    width: min(100% - 32px, 1100px);
+
+    margin: 0 auto;
+
+    padding: 35px 0 45px;
+
+    flex: 1;
+}
+
+
+
+
+.fee-section,
+.receipt-section {
+    margin-bottom: 35px;
+}
+
+.fee-section h1,
+.receipt-section h2 {
+    margin-bottom: 15px;
+
+    color: #1e293b;
+
+    font-size: 24px;
+}
+
+
+
+
+.table-container {
+    width: 100%;
+
+    overflow-x: auto;
+
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+
+    box-shadow: 0 4px 15px rgba(15, 23, 42, 0.06);
+}
+
+
+
+.fee-table {
+    width: 100%;
+
+    min-width: 650px;
+
+    border-collapse: collapse;
+
+    background: white;
+
+    font-size: 14px;
+}
+
+.fee-table th {
+    padding: 14px 16px;
+
+    color: white;
+
+    background: #2563eb;
+
+    text-align: left;
+
+    font-weight: 600;
+
+    white-space: nowrap;
+}
+
+.fee-table td {
+    padding: 14px 16px;
+
+    border-top: 1px solid #e2e8f0;
+
+    color: #475569;
+
+    white-space: nowrap;
+}
+
+.fee-table tbody tr:hover {
+    background: #f8fafc;
+}
+
+
+
+
+.fee-table td:last-child {
+    color: #2563eb;
+
+    font-weight: 600;
+}
+
+
+
+
+.receipt-table {
+    min-width: 600px;
+}
+
+
+
+
+footer {
+    padding: 18px;
+
+    border-top: 1px solid #e2e8f0;
+
+    text-align: center;
+
+    color: #64748b;
+
+    font-size: 14px;
+}
+
+
+
+@media (min-width: 700px) {
+
+    nav {
+        flex-direction: row;
+        justify-content: space-between;
+
+        padding: 18px 40px;
+    }
+
+    .nav-links {
+        gap: 15px;
+    }
+
+    .fees-page {
+        padding-top: 45px;
+    }
+
+    .fee-section h1,
+    .receipt-section h2 {
+        font-size: 26px;
+    }
+
+}

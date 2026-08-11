@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>StudentHub Portal — Admin Timetable</title>
+
+    <link rel="stylesheet" href="CSS/admin-timetable.css" />
+  </head>
+
+  <body>
+    <nav>
+      <div class="logo">
+        <img src="Images/student_icon.png" alt="StudentHub" />
+        <span>StudentHub</span>
+        <small>Admin / Teacher</small>
+      </div>
+
+      <div class="nav-links">
+        <a href="admin-dashboard.html">Admin Dashboard</a>
+        <a href="#" class="logout">Logout</a>
+      </div>
+    </nav>
+
+    <main class="admin-timetable-page">
+      <section class="timetable-box">
+        <div class="day-selector">
+          <label for="adminDaySelect"> Select day </label>
+
+          <select id="adminDaySelect">
+            <option selected>Monday</option>
+            <option>Tuesday</option>
+            <option>Wednesday</option>
+            <option>Thursday</option>
+            <option>Friday</option>
+            <option>Saturday</option>
+          </select>
+        </div>
+
+        <div class="timetable-content">
+          <div class="section-heading">
+            <h1>My Classes</h1>
+            <p>Classes scheduled for the selected day.</p>
+          </div>
+
+          <div class="table-container">
+            <table class="timetable-table">
+              <thead>
+                <tr>
+                  <th>Time</th>
+                  <th>Subject</th>
+                  <th>Batch</th>
+                  <th>Room</th>
+                </tr>
+              </thead>
+
+              <tbody id="adminTimetableBody">
+                <tr>
+                  <td>9:00 - 10:00</td>
+                  <td>Mathematics</td>
+                  <td>CS-A</td>
+                  <td>Room 101</td>
+                </tr>
+
+                <tr>
+                  <td>11:00 - 12:00</td>
+                  <td>Mathematics</td>
+                  <td>CS-B</td>
+                  <td>Room 204</td>
+                </tr>
+
+                <tr>
+                  <td>2:00 - 3:00</td>
+                  <td>Mathematics</td>
+                  <td>CS-A</td>
+                  <td>Room 101</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 StudentHub Portal. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
