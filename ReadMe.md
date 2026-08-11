@@ -23,7 +23,10 @@ StudentHub
 - StudentHub website
 - Multiple HTML pages
 - Navigation
-- Basic HTML concepts
+
+### Practical 3
+- Apply on CSS every page
+- Design every page
 
 
 ## Author
