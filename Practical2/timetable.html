@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StudentHub Portal — Timetable</title>
+  </head>
+
+  <body>
+    <nav>
+      <div><span>&#9679;</span> StudentHub Portal</div>
+
+      <div>
+        <a href="index.html">Home</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="events.html">Events</a>
+        <a href="profile.html">Profile</a>
+        <a href="#">Logout</a>
+      </div>
+    </nav>
+
+    <div>
+      <div>
+        <div>
+          <label for="daySelect">Select day</label>
+          <select id="daySelect">
+            <option selected>Monday</option>
+            <option>Tuesday</option>
+            <option>Wednesday</option>
+            <option>Thursday</option>
+            <option>Friday</option>
+            <option>Saturday</option>
+          </select>
+        </div>
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Time</th>
+            <th>Faculty</th>
+            <th>Course</th>
+            <th>Attendance Status</th>
+          </tr>
+        </thead>
+
+        <tbody id="timetableBody"></tbody>
+      </table>
+    </div>
+
+    <footer>&copy; 2026 College Name. All rights reserved.</footer>
+  </body>
+</html>

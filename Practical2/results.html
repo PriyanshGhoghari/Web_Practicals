@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StudentHub Portal — Results</title>
+  </head>
+
+  <body>
+    <nav>
+      <div><span>&#9679;</span> StudentHub Portal</div>
+
+      <div>
+        <a href="index.html">Home</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="events.html">Events</a>
+        <a href="profile.html">Profile</a>
+        <a href="#">Logout</a>
+      </div>
+    </nav>
+
+    <div>
+      <div>
+        <div>
+          <label for="examSelect">Select exam</label>
+          <select id="examSelect">
+            <option value="" selected disabled hidden>Select Semester</option>
+            <option>Sem 1</option>
+            <option>Sem 2</option>
+            <option>Sem 3</option>
+          </select>
+        </div>
+
+        <button id="viewResultBtn">View Result</button>
+      </div>
+    </div>
+
+    <div id="resultModal">
+      <div>
+        <div>
+          <span>&#127891; University Result</span>
+        </div>
+
+        <div>
+          <div>
+            <span>Student Name</span>
+            <strong id="resultStudentName">GUEST STUDENT</strong>
+          </div>
+
+          <div>
+            <span>Student ID</span>
+            <strong>25DCE029</strong>
+          </div>
+
+          <div>
+            <span>Semester</span>
+            <strong>4</strong>
+          </div>
+
+          <div>
+            <span>Month / Year</span>
+            <strong id="resultMonth">May 2026</strong>
+          </div>
+
+          <div>
+            <span>SGPA</span>
+            <strong id="resultSgpa">8.18</strong>
+          </div>
+
+          <table>
+            <thead>
+              <tr>
+                <th>Course Name</th>
+                <th>Course Type</th>
+                <th>Credit</th>
+                <th>Grade</th>
+              </tr>
+            </thead>
+
+            <tbody id="resultRows"></tbody>
+          </table>
+        </div>
+
+      </div>
+    </div>
+
+    <footer>&copy; 2026 College Name. All rights reserved.</footer>
+  </body>
+</html>
