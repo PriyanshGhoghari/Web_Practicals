@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>StudentHub Portal</title>
+
+    <link rel="stylesheet" href="CSS/events.css" />
+  </head>
+
+  <body>
+    <nav>
+      <a href="index.html" class="logo">
+        <img src="Images/student_icon.png" alt="StudentHub" />
+        <span>StudentHub</span>
+      </a>
+
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="events.html" class="active">Events</a>
+        <a href="profile.html">Profile</a>
+        <a href="#">Logout</a>
+        <button id="themeButton">
+          <img src="Images/moon.png" alt="Toggle theme" />
+        </button>
+      </div>
+    </nav>
+
+    <main class="events-page">
+      <div class="events-heading">
+        <h1>Upcoming Events</h1>
+        <p>Stay updated with the latest events happening on campus.</p>
+      </div>
+
+      <section class="event-controls">
+        <div class="search-control">
+          <label for="searchInput">Search Events</label>
+          <input
+            type="search"
+            id="searchInput"
+            placeholder="Search by event, venue or description"
+          />
+        </div>
+
+        <div class="select-control">
+          <label for="categoryFilter">Category</label>
+          <select id="categoryFilter">
+            <option value="all">All Categories</option>
+          </select>
+        </div>
+
+        <div class="select-control">
+          <label for="sortSelect">Sort By</label>
+          <select id="sortSelect">
+            <option value="date-asc">Date: Oldest First</option>
+            <option value="date-desc">Date: Newest First</option>
+            <option value="title-asc">Title: A-Z</option>
+            <option value="title-desc">Title: Z-A</option>
+          </select>
+        </div>
+      </section>
+
+      <p id="resultCount" class="result-count"></p>
+
+      <div id="loadingMessage" class="status-message">
+        Loading events...
+      </div>
+
+      <div id="errorMessage" class="status-message error-message"></div>
+
+      <div id="eventsContainer" class="events-grid"></div>
+
+      <div id="pagination" class="pagination"></div>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 StudentHub Portal. All rights reserved.</p>
+    </footer>
+
+    <script src="JS/events.js"></script>
+  </body>
+</html>
