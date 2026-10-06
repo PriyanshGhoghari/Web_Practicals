@@ -3,8 +3,6 @@ const themeIcon = themeButton.querySelector("img");
 
 const eventsContainer = document.getElementById("eventsContainer");
 const searchInput = document.getElementById("searchInput");
-const categoryFilter = document.getElementById("categoryFilter");
-const sortSelect = document.getElementById("sortSelect");
 const pagination = document.getElementById("pagination");
 const loadingMessage = document.getElementById("loadingMessage");
 const errorMessage = document.getElementById("errorMessage");
@@ -39,8 +37,6 @@ async function fetchEvents() {
 
         events = await response.json();
 
-        populateCategories();
-
         filteredEvents = [...events];
 
         loadingMessage.style.display = "none";
@@ -52,67 +48,21 @@ async function fetchEvents() {
     }
 }
 
-function populateCategories() {
-    const categories = [...new Set(events.map(event => event.category))];
-
-    categories.sort();
-
-    categories.forEach(category => {
-        const option = document.createElement("option");
-
-        option.value = category;
-        option.textContent = category;
-
-        categoryFilter.appendChild(option);
-    });
-}
-
 function applyFilters() {
     const searchText = searchInput.value.trim().toLowerCase();
-    const selectedCategory = categoryFilter.value;
-    const selectedSort = sortSelect.value;
 
     filteredEvents = events.filter(event => {
-        const matchesSearch =
+        return (
             event.title.toLowerCase().includes(searchText) ||
             event.venue.toLowerCase().includes(searchText) ||
-            event.description.toLowerCase().includes(searchText);
-
-        const matchesCategory =
-            selectedCategory === "all" ||
-            event.category === selectedCategory;
-
-        return matchesSearch && matchesCategory;
+            event.description.toLowerCase().includes(searchText)
+        );
     });
-
-    sortEvents(selectedSort);
 
     currentPage = 1;
 
     renderEvents();
     renderPagination();
-}
-
-function sortEvents(sortType) {
-    if (sortType === "date-asc") {
-        filteredEvents.sort((a, b) => new Date(a.date) - new Date(b.date));
-    }
-
-    if (sortType === "date-desc") {
-        filteredEvents.sort((a, b) => new Date(b.date) - new Date(a.date));
-    }
-
-    if (sortType === "title-asc") {
-        filteredEvents.sort((a, b) =>
-            a.title.localeCompare(b.title)
-        );
-    }
-
-    if (sortType === "title-desc") {
-        filteredEvents.sort((a, b) =>
-            b.title.localeCompare(a.title)
-        );
-    }
 }
 
 function renderEvents() {
@@ -232,7 +182,5 @@ function formatDate(dateString) {
 }
 
 searchInput.addEventListener("input", applyFilters);
-categoryFilter.addEventListener("change", applyFilters);
-sortSelect.addEventListener("change", applyFilters);
 
 fetchEvents();

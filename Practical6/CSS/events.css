@@ -143,24 +143,21 @@ nav {
   margin-bottom: 18px;
 }
 
-.search-control,
-.select-control {
+.search-control {
   display: flex;
   flex-direction: column;
 
   gap: 7px;
 }
 
-.search-control label,
-.select-control label {
+.search-control label {
   color: #334155;
 
   font-size: 13px;
   font-weight: 600;
 }
 
-.search-control input,
-.select-control select {
+.search-control input {
   width: 100%;
 
   padding: 11px 12px;
@@ -176,8 +173,7 @@ nav {
   outline: none;
 }
 
-.search-control input:focus,
-.select-control select:focus {
+.search-control input:focus {
   border-color: #2563eb;
 
   box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
@@ -406,13 +402,11 @@ footer {
   color: #94a3b8;
 }
 
-.dark-mode .search-control label,
-.dark-mode .select-control label {
+.dark-mode .search-control label {
   color: #e1d5cb;
 }
 
-.dark-mode .search-control input,
-.dark-mode .select-control select {
+.dark-mode .search-control input {
   color: white;
   background: #1e293b;
 
@@ -474,7 +468,7 @@ footer {
   }
 
   .event-controls {
-    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-columns: 1fr;
     align-items: end;
   }
 
