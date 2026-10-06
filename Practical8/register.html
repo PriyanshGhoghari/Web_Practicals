@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StudentHub Portal</title>
+
+    <link rel="stylesheet" href="CSS/register.css" />
+    <link rel="stylesheet" href="CSS/navbar.css" />
+  </head>
+
+  <body>
+    <nav>
+      <div class="logo">
+        <img src="Images/student_icon.png" alt="StudentHub" />
+        <span>StudentHub</span>
+      </div>
+
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="register.html">Register</a>
+        <a href="login.html">Login</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="events.html">Events</a>
+        <a href="profile.html">Profile</a>
+        <button id="themeButton">
+          <img src="Images/moon.png" alt="" />
+        </button>
+      </div>
+    </nav>
+
+    <main class="register-page">
+      <div class="register-card">
+        <h1>StudentHub Portal</h1>
+
+        <form id="registerForm" action="register.php" method="post" novalidate>
+          <div class="form-group">
+            <label for="regName">Full name</label>
+            <input type="text" id="regName" name="name" maxlength="100" required />
+          </div>
+
+          <div class="form-group">
+            <label for="regEmail">Email</label>
+            <input type="email" id="regEmail" name="email" required />
+          </div>
+
+          <div class="form-group">
+            <label for="regPhone">Phone no</label>
+            <input type="tel" id="regPhone" name="phone" inputmode="numeric" maxlength="10" required />
+          </div>
+
+          <div class="form-group">
+            <label for="regPassword">Password</label>
+            <input type="password" id="regPassword" name="password" required />
+          </div>
+
+          <div class="form-group">
+            <label for="regConfirm">Confirm password</label>
+            <input type="password" id="regConfirm" name="confirm_password" required />
+          </div>
+
+          <button type="submit">Sign up</button>
+        </form>
+
+        <p class="login-text">
+          Already have an account?
+          <a href="login.html">Login</a>
+        </p>
+
+        <section id="registrationSuccess" class="success-box" tabindex="-1" role="status" hidden>
+          <h2>Registration is successful!</h2>
+          <p>Your details have been saved.</p>
+          <a href="login.html">You can now login</a>
+        </section>
+      </div>
+    </main>
+
+    <script src="Js/register.js"></script>
+    <script src="Js/theme.js"></script>
+  </body>
+</html>
+
