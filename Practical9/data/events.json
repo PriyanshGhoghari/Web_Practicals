@@ -1,0 +1,137 @@
+[
+  {
+    "id": 1,
+    "title": "Tech Fest 2026",
+    "date": "2026-08-12",
+    "venue": "Main Auditorium",
+    "category": "Technical",
+    "description": "Annual technical festival with coding contests, robotics demos and guest talks.",
+    "image": "Images/image.png"
+  },
+  {
+    "id": 2,
+    "title": "Sports Meet",
+    "date": "2026-08-20",
+    "venue": "College Ground",
+    "category": "Sports",
+    "description": "Inter-department athletics, football and cricket matches throughout the week.",
+    "image": "Images/image copy.png"
+  },
+  {
+    "id": 3,
+    "title": "Cultural Night",
+    "date": "2026-08-28",
+    "venue": "Amphitheatre",
+    "category": "Cultural",
+    "description": "Music, dance and drama performances from students across every batch.",
+    "image": "Images/image copy 2.png"
+  },
+  {
+    "id": 4,
+    "title": "Alumni Meet",
+    "date": "2026-09-05",
+    "venue": "Seminar Hall",
+    "category": "Academic",
+    "description": "Meet graduates and learn about their college experiences and career journeys.",
+    "image": "Images/image.png"
+  },
+  {
+    "id": 5,
+    "title": "Baroda Hackathon 2026",
+    "date": "2026-09-14",
+    "venue": "Computer Lab 2",
+    "category": "Technical",
+    "description": "A 24-hour build sprint where students compete to create innovative solutions.",
+    "image": "Images/image copy.png"
+  },
+  {
+    "id": 6,
+    "title": "Placement Drive",
+    "date": "2026-09-22",
+    "venue": "Admin Block",
+    "category": "Career",
+    "description": "On-campus recruitment drive with multiple companies participating.",
+    "image": "Images/image copy 2.png"
+  },
+  {
+    "id": 7,
+    "title": "AI Workshop",
+    "date": "2026-10-03",
+    "venue": "Innovation Lab",
+    "category": "Technical",
+    "description": "Hands-on workshop covering machine learning, generative AI and practical applications.",
+    "image": "Images/image.png"
+  },
+  {
+    "id": 8,
+    "title": "Entrepreneurship Summit",
+    "date": "2026-10-10",
+    "venue": "Conference Hall",
+    "category": "Career",
+    "description": "Students interact with founders and explore startup ideas, funding and innovation.",
+    "image": "Images/image copy.png"
+  },
+  {
+    "id": 9,
+    "title": "Coding Contest",
+    "date": "2026-10-18",
+    "venue": "Programming Lab",
+    "category": "Technical",
+    "description": "Competitive programming contest featuring algorithmic and problem-solving challenges.",
+    "image": "Images/image copy 2.png"
+  },
+  {
+    "id": 10,
+    "title": "Navratri Celebration",
+    "date": "2026-10-24",
+    "venue": "Open Ground",
+    "category": "Cultural",
+    "description": "Campus celebration featuring traditional music, dance and student performances.",
+    "image": "Images/image.png"
+  },
+  {
+    "id": 11,
+    "title": "Cyber Security Seminar",
+    "date": "2026-11-02",
+    "venue": "Main Auditorium",
+    "category": "Technical",
+    "description": "Seminar covering web security, ethical hacking and modern cyber threats.",
+    "image": "Images/image copy.png"
+  },
+  {
+    "id": 12,
+    "title": "Inter College Cricket",
+    "date": "2026-11-08",
+    "venue": "University Stadium",
+    "category": "Sports",
+    "description": "Inter-college cricket tournament featuring teams from colleges across the region.",
+    "image": "Images/image copy 2.png"
+  },
+  {
+    "id": 13,
+    "title": "Research Expo",
+    "date": "2026-11-15",
+    "venue": "Exhibition Centre",
+    "category": "Academic",
+    "description": "Students showcase innovative research projects, prototypes and technical ideas.",
+    "image": "Images/image.png"
+  },
+  {
+    "id": 14,
+    "title": "Resume Building Workshop",
+    "date": "2026-11-22",
+    "venue": "Seminar Hall",
+    "category": "Career",
+    "description": "Learn how to create professional resumes and prepare effectively for placements.",
+    "image": "Images/image copy.png"
+  },
+  {
+    "id": 15,
+    "title": "Photography Competition",
+    "date": "2026-12-01",
+    "venue": "Student Activity Centre",
+    "category": "Cultural",
+    "description": "Students participate in a campus photography competition based on creative themes.",
+    "image": "Images/image copy 2.png"
+  }
+]
