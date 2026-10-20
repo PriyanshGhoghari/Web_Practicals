@@ -1,2 +1,1 @@
-Learned how to create sql tables,create relationships between the tables,
-primary,foreign key
+Learned how to insert user data into MySQL, check duplicate emails and use password_hash() to store passwords securely.

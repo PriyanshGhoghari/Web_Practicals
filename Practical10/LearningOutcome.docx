@@ -1,2 +1,1 @@
-Learned how to create sql tables,create relationships between the tables,
-primary,foreign key
+Learned how to use PHP sessions, verify passwords using password_verify(), redirect students and admins to different dashboards and implement session timeout.

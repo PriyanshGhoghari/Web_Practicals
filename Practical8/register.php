@@ -2,8 +2,8 @@
 $isSuccess = false;
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $name = trim(strip_tags($_POST['name'] ?? ''));
-    $email = trim(filter_var($_POST['email'] ?? '', FILTER_SANITIZE_EMAIL));
+    $name = trim($_POST['name']) ?? '';
+    $email = trim($_POST['email']) ?? '';
     $phone = trim($_POST['phone'] ?? '');
     $password = $_POST['password'] ?? '';
     $confirmPassword = $_POST['confirm_password'] ?? '';
