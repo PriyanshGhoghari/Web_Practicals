@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Practical 13 - PHP JSON API and Fetch CRUD</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+<main>
+    <h1>Student Management</h1>
+    <p>Practical 13 - PHP JSON API and Fetch CRUD without Page Reload</p>
+    <p id="message" role="status" aria-live="polite">Loading students...</p>
+
+    <section>
+        <h2 id="form-title">Add Student</h2>
+        <form id="student-form">
+            <input type="hidden" name="id" value="">
+            <label>Name <input name="name" maxlength="100" required></label>
+            <label>Email <input type="email" name="email" maxlength="150" required></label>
+            <label>Course
+                <select name="course">
+                    <option>BCA</option><option>BBA</option><option>BCom</option><option>BSc IT</option>
+                </select>
+            </label>
+            <button type="submit" id="save">Add Student</button>
+            <button type="button" id="cancel">Cancel / Reset</button>
+        </form>
+    </section>
+
+    <section>
+        <h2>Student Records</h2>
+        <button type="button" id="refresh">Refresh List</button>
+        <p id="count"></p>
+        <div class="table-wrap">
+            <table>
+                <thead><tr><th>ID</th><th>Name</th><th>Email</th><th>Course</th><th>Actions</th></tr></thead>
+                <tbody id="students"></tbody>
+            </table>
+        </div>
+    </section>
+</main>
+</body>
+</html>
